@@ -1,0 +1,844 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'poppins', sans-serif !important;
+}
+a{
+    text-decoration: none !important;
+}
+.container-fluid{
+    padding-top: 2.5rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    background-color: #F7F7F7;
+}
+.profile-photo{
+    border-radius: 20px;
+}
+.profile-photo img{
+    height: 205px;
+    width: 100%;
+    object-fit: cover;
+}
+.product-details-img li {
+    margin-right: -10px;
+}
+.card{
+    margin-bottom: 1.875rem;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border: 0rem solid transparent;
+    border-radius: 1.25rem !important;
+    box-shadow: 0rem 0.3125rem 0.3125rem 0rem rgb(82 63 105 / 5%)!important;
+    height: calc(100% - 30px);
+    border-radius: 1.25rem;
+}
+.row{
+    margin-right:0 !important ;
+    margin-left:0 !important
+}
+.card-body {
+    padding: 1.875rem !important;
+}
+.font-w700{
+    font-weight: 700!important;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+}
+.btn-primary{
+    color: white !important;
+    background-color: #00A15D !important;
+    border-color: #00A15D !important;
+}
+.btn-primary:hover{
+    border-color: #006e40 !important;
+    background-color: #006e40 !important;
+}
+.btn {
+    padding: 0.938rem 1.5rem;
+    border-radius: 1.25rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.workload-button a{
+    padding: 12px 20px;
+    margin: 18px 7px;
+}
+.btn-outline-light {
+    color: #6e6e6e !important;
+    border-color: #c8c8c8 !important;
+}
+.btn-rounded {
+    border-radius: 2.5rem !important;
+}
+.btn-outline-light:hover{
+    color: #000 !important;
+    background-color: #c8c8c8 !important;
+    border-color: #c8c8c8 !important;
+}
+.light.btn-primary {
+    background-color: rgba(0, 161, 93, 0.1) !important;
+    border-color: rgba(0, 161, 93, 0.1) !important;
+    color: #00A15D !important;
+}
+.light.btn-primary:hover {
+    background-color: #00A15D !important;
+    border-color: #00A15D !important;
+    color: #fff !important;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-details{
+    justify-content: end;
+    display: flex;
+}
+.product-details-img{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.product-details-img ul{
+    margin-left: 10px;
+}
+.product-details-img img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+    border: 1px solid #fff;
+}
+.product-details-img li span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #00A15D;
+    color: white;
+    line-height: 40px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.text-primary{
+    color:#00A15D !important;
+}
+.border-bottom {
+    border-bottom: 1px solid #EEEEEE !important;
+}
+.kanban-bx{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll !important;;
+    flex-wrap: nowrap !important;
+}
+.kanban-bx .col {
+    width: 400px;
+    min-width: 360px;
+    flex-grow: unset;
+    flex-basis: unset;
+}
+.kanban-bx::-webkit-scrollbar-thumb {
+    background-color: #7e7e7e !important;
+    border-radius: 10px !important;
+}
+.kanban-bx::-webkit-scrollbar {
+    background-color: #ECECEC;
+    width: 8px;
+    height: 8px;
+}
+.col {
+    flex: 1 0 0%;
+}
+.fa-plus{
+    color: #000;
+}
+.kanban-bx .col .card {
+    height: auto;
+    cursor: all-scroll;
+}
+.card {
+    margin-bottom: 1.875rem;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border: 0rem solid transparent !important;
+    border-radius: 1.25rem;
+    height: calc(100% - 30px);
+}
+.fas:hover{
+    color: #00814A;
+}
+.kanban-bx .card-body span{
+    font-size: 13px;
+}
+.kanban-user .users li img {
+    border-radius: 32px;
+    height: 32px;
+    width: 32px;
+    border: 2px solid #fff;
+}
+.kanban-user .users {
+    display: flex;
+}
+.pink{
+    background-color: #FFA7D7 !important;
+}
+.orange{
+    background-color:#FFCF6D !important;
+}
+.font-w600 {
+    font-weight: 600;
+}
+.fs-18{
+    font-size: 18px;
+}
+.kanban-user .users li {
+    margin-right: -10px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.footer p{
+    text-align: center;
+}
+
+.modal.left .modal-dialog,
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 320px;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+	.modal.left .modal-content,
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	.modal.left .modal-body,
+	.modal.right .modal-body {
+		padding: 15px 15px 80px;
+	}
+    .modal.right.fade .modal-dialog {
+		right: -320px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+	
+	.modal.right.fade.in .modal-dialog {
+		right: 0;
+	}
+    .modal-content {
+		border-radius: 0;
+		border: none;
+	}
+
+	.modal-header {
+		border-bottom-color: #EEEEEE;
+		background-color: #FAFAFA;
+	}
+    .demo {
+        padding-top: 60px;
+        padding-bottom: 110px;
+    }
+    
+    .btn-demo {
+        margin: 15px;
+        padding: 10px 15px;
+        border-radius: 0;
+        font-size: 16px;
+        background-color: #FFFFFF;
+    }
+    
+.btn-demo:focus {
+        outline: 0;
+    }
+#meeting{
+        display: none;
+        position: fixed;
+        top:0;
+        width: 100%;
+        height: 721px;
+        background-color: rgba(18, 18, 18, 0.556)!important;
+
+    }
+.meeting{
+    position: relative;
+    /* top: 10px; */
+    left: 50%;
+    width:50%;
+    background-color: white;
+    height: 721px;
+    border-left: 1px solid #00000050 ;
+    transform: translateX(900px);
+}
+.meeting-content{
+    width: 100%;
+    margin-left: auto;
+}
+.meeting-head{
+    width:100%;
+    margin:auto;
+    display: flex;
+    width: 100%;
+    margin:auto;
+    justify-content: space-between;
+    border-top:1px solid #00000050;
+    border-bottom:1px solid #00000050;
+    padding: 5px 5px;
+    background-color: #006e40;
+}
+.meeting-head-name p,.meeting-close i{
+    margin-top: 1rem;
+}
+.meeting-head-name p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px
+}
+.meeting-close i{
+    color: white;
+}
+/* .meeting-close{
+    display: flex;
+    width: 100%;
+    margin:auto;
+    justify-content: end;
+    border-top:1px solid #00000050;
+    border-bottom:1px solid #00000050;
+    padding: 5px 5px;
+} */
+.meeting-close i{
+    font-size: 25px;
+}
+.meeting-body{
+    width:90%;
+    margin: auto;
+    padding: 20px 0;
+    overflow-y: auto ;
+    height: 600px;
+}
+.meeting-body::-webkit-scrollbar-thumb {
+    background-color: #7e7e7e !important;
+    border-radius: 10px !important;
+}
+.meeting-body::-webkit-scrollbar {
+    background-color: #ECECEC;
+    width: 8px;
+    height: 8px;
+}
+.meeting-body input{
+    border: 1px solid #006e40;
+}
+.meeting-name{
+width: 100%;
+margin-bottom: 10px;
+}
+.meeting-name input{
+    padding: 10px;
+    width: 100%;
+    border-radius:10px;
+    border:1px solid transparent;
+    margin-bottom: 15px;
+}
+.meeting-name input:hover{
+    border:1px solid rgba(0, 0, 0, 0.264)
+}
+.meeting-name input:focus{
+    outline: none;
+    border:1px solid rgb(31, 31, 221)
+}
+.meeting-date{
+    width:95%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.meeting-date .start-date{
+    margin-bottom: 10px;
+}
+.meeting-date .form-control{
+    display: inline-block;
+    width: 52%;
+}
+.meeting-date label{
+    width: 25%;
+}
+.project-structure {
+    width: 95%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.project-structure label{
+    width: 25%;
+}
+.project-object{
+    width: 95%;
+    margin:auto;
+}
+
+.project-dropdown{
+    display: inline-block;
+}
+.project-object label{
+    width: 25%;
+}
+.meeting-body input:focus{
+    outline: none;
+    border:1px solid #006e40;
+}
+.addrow-new-element{
+    width: 45%;
+    margin: 20px auto;
+
+}
+.project-Structure-Element{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.addrow .form-control{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-color: #00A15D !important;
+    background: #fff;
+    /* border: 0.0625rem solid #f5f5f5; */
+    padding: 0.125rem 1.25rem;
+    color: #6e6e6e;
+    height: 3rem;
+    border-radius: 1rem;
+    display: inline-block;
+    width: 45%;
+}
+.addrow button{
+    display: inline-block !important;
+    margin-left: -6px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background-color: #00A15D;
+    color: #fff;
+    border: 0.0625rem solid #f5f5f5;
+    min-width: 3.125rem;
+    justify-content: center;
+    padding: 0.742rem 0.75rem;
+    border-radius: 1.25rem;
+}
+.addrow  .form-control:focus{
+    box-shadow: 0 0 0 0rem  !important;
+}
+.project-object button{
+    display: inline-block !important;
+    margin-left: -1px;
+    margin-bottom: 2px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background-color: #00A15D;
+    color: #fff;
+    border: 0.0625rem solid #f5f5f5;
+    min-width: 3.125rem;
+    justify-content: center;
+    padding: 0.542rem 0.75rem;
+    border-radius: 1.25rem;
+}
+.project-dropdown .nice-select{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.project-dropdown .nice-select:focus{
+    box-shadow: 0 0 0 0rem  !important;
+}
+.project-Object-Element{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.project-object-new-element{
+    width: 45%;
+    margin: 20px auto;
+}
+.meeting-add{
+    width: 95%;
+}
+.meeting-add button{
+    display: inline-block !important;
+    background-color: #00A15D;
+    color: #fff;
+    border: 0.0625rem solid #f5f5f5;
+    min-width: 3.125rem;
+    justify-content: center;
+    padding: 0.742rem 0.75rem;
+    border-radius: 1.25rem;
+    width: 100%;
+}
+.calendar {
+    margin-bottom: 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-size:18px;
+  border: 1px solid #333333;
+  box-shadow: 0px 20px 40px rgba(59,60,56,0.05);
+}
+.ui-datepicker {
+  background: #ffffff;
+  border-radius: 15px;
+}
+.ui-datepicker-header {
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  background: #31639c;
+  margin-bottom: 10px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px;
+}
+.ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -43px 0px 0px 8px;
+}
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px;
+}
+.ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px;
+}
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+  border-color: #333333;
+}
+.ui-datepicker-title {
+  text-align: center;
+  font-size:25px;
+}
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 40px;
+  color: #31639c;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  line-height: 40px;
+  font-size: 16px;
+}
+.ui-state-default:hover {
+  color: #ffffff;
+  background:#31639c;
+  border-radius:50px;
+  transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
+}
+.ui-state-highlight {
+  color: #ffffff;
+  background-color:#31639c;
+  border-radius:50px;
+}
+
+.ui-state-active {
+  color: #ffffff;
+  background-color:#31639c;
+  border-radius:50px;
+}
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid transparent;
+}
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(232, 232, 232);
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: normal;
+    height: 42px;
+    line-height: 40px;
+    outline: none;
+    padding-left: 18px;
+    padding-right: 30px;
+    position: relative;
+    transition: all 0.2s ease-in-out 0s;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+    text-align: left !important;
+}
+.nice-select .list {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgb(68 68 68 / 11%) 0px 0px 0px 1px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    transform-origin: 50% 0px;
+    transform: scale(0.75) translateY(-21px);
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25) 0s, opacity 0.15s ease-out 0s;
+    z-index: 9;}
+.nice-select .option {
+        cursor: pointer;
+        font-weight: 400;
+        line-height: 40px;
+        list-style: none;
+        min-height: 40px;
+        outline: none;
+        padding-left: 18px;
+        padding-right: 29px;
+        text-align: left;
+        transition: all 0.2s ease 0s;
+    }
+.nice-select::after {
+        border-bottom: 3px solid rgb(238, 238, 238);
+        border-right: 3px solid rgb(238, 238, 238);
+        content: "";
+        display: block;
+        height: 10px;
+        margin-top: -6px;
+        pointer-events: none;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        margin-right: 10px;
+        transform-origin: 66% 66%;
+        transform: rotate(45deg);
+        transition: all 0.15s ease-in-out 0s;
+        width: 10px;}
+.nice-select .option.focus, .nice-select .option.selected.focus {
+            background-color: rgb(246, 246, 246);
+        }
+
+
+.nice-select {
+            -webkit-tap-highlight-color: transparent;
+            background-color: #fff;
+            border-radius: 5px;
+            border: solid 1px #e8e8e8;
+            box-sizing: border-box;
+            clear: both;
+            cursor: pointer;
+            display: block;
+            float: left;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: normal;
+            height: 42px;
+            line-height: 40px;
+            outline: none;
+            padding-left: 18px;
+            padding-right: 30px;
+            position: relative;
+            text-align: left !important;
+            -webkit-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
+            white-space: nowrap;
+            width: auto; }
+.nice-select:hover {
+              border-color: #dbdbdb; }
+.nice-select:active, .nice-select.open, .nice-select:focus {
+              border-color: #999; }
+.nice-select:after {
+              border-bottom: 2px solid #999;
+              border-right: 2px solid #999;
+              content: '';
+              display: block;
+              height: 5px;
+              margin-top: -4px;
+              pointer-events: none;
+              position: absolute;
+              right: 12px;
+              top: 50%;
+              -webkit-transform-origin: 66% 66%;
+                  -ms-transform-origin: 66% 66%;
+                      transform-origin: 66% 66%;
+              -webkit-transform: rotate(45deg);
+                  -ms-transform: rotate(45deg);
+                      transform: rotate(45deg);
+              -webkit-transition: all 0.15s ease-in-out;
+              transition: all 0.15s ease-in-out;
+              width: 5px; }
+.nice-select.open:after {
+              -webkit-transform: rotate(-135deg);
+                  -ms-transform: rotate(-135deg);
+                      transform: rotate(-135deg); }
+.nice-select.open .list {
+              opacity: 1;
+              pointer-events: auto;
+              -webkit-transform: scale(1) translateY(0);
+                  -ms-transform: scale(1) translateY(0);
+                      transform: scale(1) translateY(0); }
+.nice-select.disabled {
+              border-color: #ededed;
+              color: #999;
+              pointer-events: none; }
+.nice-select.disabled:after {
+                border-color: #cccccc; }
+.nice-select.wide {
+              width: 295px; }
+              .nice-select.wide .list {
+                left: 0 !important;
+                right: 0 !important; }
+            .nice-select.right {
+              float: right; }
+              .nice-select.right .list {
+                left: auto;
+                right: 0; }
+            .nice-select.small {
+              font-size: 12px;
+              height: 36px;
+              line-height: 34px; }
+              .nice-select.small:after {
+                height: 4px;
+                width: 4px; }
+              .nice-select.small .option {
+                line-height: 34px;
+                min-height: 34px; }
+            .nice-select .list {
+              background-color: #fff;
+              border-radius: 5px;
+              box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+              box-sizing: border-box;
+              margin-top: 4px;
+              opacity: 0;
+              overflow: hidden;
+              padding: 0;
+              pointer-events: none;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              -webkit-transform-origin: 50% 0;
+                  -ms-transform-origin: 50% 0;
+                      transform-origin: 50% 0;
+              -webkit-transform: scale(0.75) translateY(-21px);
+                  -ms-transform: scale(0.75) translateY(-21px);
+                      transform: scale(0.75) translateY(-21px);
+              -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+              transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+              z-index: 9; }
+              .nice-select .list:hover .option:not(:hover) {
+                background-color: transparent !important; }
+            .nice-select .option {
+              cursor: pointer;
+              font-weight: 400;
+              line-height: 40px;
+              list-style: none;
+              min-height: 40px;
+              outline: none;
+              padding-left: 18px;
+              padding-right: 29px;
+              text-align: left;
+              -webkit-transition: all 0.2s;
+              transition: all 0.2s; }
+              .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+                background-color: #f6f6f6; }
+              .nice-select .option.selected {
+                font-weight: bold; }
+              .nice-select .option.disabled {
+                background-color: transparent;
+                color: #999;
+                cursor: default; }
+          
+          .no-csspointerevents .nice-select .list {
+            display: none; }
+          
+          .no-csspointerevents .nice-select.open .list {
+            display: block; }
+@media only screen and (max-width: 525px){
+    .workload-button a {
+        padding: 7px 15px;
+        margin: 7px 7px;
+    }
+    .btn{
+        font-size: 0.813rem;
+    }
+    .product-details{
+        justify-content: start;
+        padding: 10px 0;
+    }
+    .product-details ul{
+        padding-left: 0;
+    }
+    .meeting{
+        width: 100%;
+        left: 0;
+        height: 785px;
+    }
+    .meeting-date label,.project-structure label{
+        width: 35%;
+        font-size: 15px;
+    }
+    .meeting-date .form-control{
+        width:60%
+    }
+    .addrow .form-control{
+        width: 46%;
+    }
+    .nice-select.wide{
+        width:180px;
+    }
+    #meeting{
+        height: 785px;
+    }
+}

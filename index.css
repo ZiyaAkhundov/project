@@ -823,7 +823,7 @@ margin-bottom: 10px;
     .meeting{
         width: 100%;
         left: 0;
-        height: 785px;
+        height: 800px;
     }
     .meeting-date label,.project-structure label{
         width: 35%;
@@ -839,6 +839,6 @@ margin-bottom: 10px;
         width:180px;
     }
     #meeting{
-        height: 785px;
+        height: 800px;
     }
 }

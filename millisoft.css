@@ -1,0 +1,847 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+
+#main{
+    height: 50vh;
+    background: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(219,219,219,1) 0%, rgba(219,219,219,1) 100%);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.main-road .col .row{
+    margin: 10%;
+    text-transform: uppercase;
+    font-family: 'Syne', sans-serif;
+}
+.main-road .col .row p{
+    font-size:12px; 
+    margin-right: 10px;
+    
+}
+#main nav input{
+    display: none;
+}
+#payment{
+    padding: 70px 0;
+}
+#payment .row:nth-child(2){
+    margin: 20px;
+}
+#payment .row:nth-child(1) p{
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    font-size:18px;
+}
+.annual-payment{
+    color: gray;
+}
+.switch-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.switch-btn p{
+    font-size:15px !important; 
+    margin: 5px;
+}
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 62px;
+    height: 35px;
+   }
+   
+   /* Hide default HTML checkbox */
+   .switch input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+   }
+   
+   /* The slider */
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #fff;
+    transition: .4s;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.9em;
+    width: 1.9em;
+    border-radius: 16px;
+    left: 1.2px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px #999999;
+    transition: .4s;
+   }
+   
+   .switch input:checked + .slider {
+    background-color: orange;
+    border: 1px solid transparent;
+   }
+   .switch input:checked + .annual-payment{
+    color: black !important;
+   }
+   .switch input:checked + .monthly-payment{
+    color:gray !important;
+   }
+   .switch input:checked + .slider:before {
+    transform: translateX(1.5em);
+   }
+.cards{
+    width: 80%;
+    margin:auto !important;
+}
+.cards .card{
+    border: 1px solid transparent !important;
+    border-radius: 10px !important;
+    transition: 0.5s;
+    margin: 20px;
+}
+.cards .card:hover{
+    border: 1px solid rgba(198, 197, 197, 0.675) !important;
+    box-shadow: 2px 2px 9px #c1c0c0;
+    transition-timing-function: ease-in-out;
+}
+.cards .card .description button, #specialPlans .row:nth-child(3) button{
+    border: 1px solid rgb(192, 192, 192);
+    width: 100%;
+    padding: 0.7rem 0;
+    border-radius: 20px;
+    margin-top: 22px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.cards .card .description button:hover, #specialPlans .row:nth-child(3) button:hover{
+    transition-timing-function: ease-in-out;
+    background-color:orange;
+    border-color: orange;
+    color:white;
+}
+.cards .card .offer ul li {
+    font-size: 16px;
+    margin: 5px 10px;
+}
+.cards .card .offer ul li i{
+    margin-right: 15px;
+    color: rgb(4, 87, 4);
+}
+.cards .card .offer ul li del,.cards .card .offer ul li del i{
+    color: rgb(183, 183, 183);
+}
+#payment .row:nth-child(5) p span,#support .row:nth-child(1) .row:nth-child(1) p span,#support .row:nth-child(5) span,#main span{
+    width: 24px;
+    border-radius: 50%;
+}
+#payment .row:nth-child(6) .orange,#specialPlans .row:nth-child(2) .orange,#form .col:nth-child(1) .row:nth-child(1) .orange,#opportunityMap .orange{
+    width: 2%;
+    border: 1px solid orange;
+}
+#payment .row:nth-child(6) .line,#specialPlans .row:nth-child(2) .line,#form .col:nth-child(1) .row:nth-child(1) .line, #opportunityMap .line{
+    border:1px solid #bcbcbc83;
+    width: 70%;
+}
+
+#compare .row, #compare .row .col{
+    border: 1px solid rgb(222, 222, 222) ;
+}
+#people .row.comma{
+    width: 5%;
+}
+#people .rating-stars{
+    color: orange;
+}
+#people .people-profile .profile-img img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+#specialPlans .nav-link, #form .nav-link,#faqMilliSoftAbout .nav-link{
+    border: none;
+    font-size: 1rem;
+    margin-right: 1.875rem;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    border-bottom: 0.0125rem solid transparent;
+    color: #828690;
+    background: transparent;
+    border-radius: 0rem;
+    font-weight: 500;
+}
+#specialPlans .nav-link:hover, #form .nav-link:hover,#faqMilliSoftAbout .nav-link:hover{
+    border-bottom: 0.0125rem ;
+    border-bottom: 0.0125rem solid orangered !important;
+    color: orangered !important;
+    border: none;
+}
+#specialPlans .nav-link.active, #form .nav-link.active,#faqMilliSoftAbout .nav-link.active{
+    border: 0;
+    border-bottom: 0.0125rem solid orangered !important;
+    color: orangered !important;
+}
+#specialPlans .nav-tabs{
+    border-bottom: 0;
+}
+#specialPlans .row:nth-child(3) button{
+    border: 1px solid orange !important;
+    border-radius: 60px !important;
+}
+.footer .row:nth-child(1) button{
+    padding: 0.3rem 2rem;
+}
+.footer .row:nth-child(3) button{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid orange;
+    color: white;
+}
+.footer .row:nth-child(4),.opportunity-footer,#faqFooter .faq-map,#leadershipFooter .leadershipFooter-footer{
+    height: auto;
+    background: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png), #06111A;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: cover;
+}
+.footer .footer-line .line,#leadershipFooter .leadershipFooter-footer .footer-line .line{
+    border: 1px solid #bcbcbc83;
+    width: 80%;
+}
+.footer .footer-line .orange,#leadershipFooter .leadershipFooter-footer .footer-line .orange{
+    border: 1px solid orange !important;
+    width: 2% !important;
+}
+#form .col:nth-child(1) .row:nth-child(2) input:focus{
+    outline: none;
+    border-bottom: 2px solid orange !important;;
+}
+#form .col:nth-child(1) .row:nth-child(2) input{
+    caret-color: orange;
+}
+#form .form-select{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #c8c8c8;
+}
+#form .form-select:focus{
+    box-shadow: 0 0 0;
+    /* border-color: orange; */
+} 
+#form textarea:focus{
+    outline: none;
+}
+#form .d-flex{
+    flex-wrap: wrap;
+}
+#form #support .row:nth-child(1) .row:nth-child(2) .orange, #support .row:nth-child(4) .orange{
+    width: 4%;
+    border: 1px solid orange;
+}
+#form #support .row:nth-child(1) .row:nth-child(2) .line, #support .row:nth-child(4) .line{
+    border: 1px solid #bcbcbc83;
+    width: 64%;
+}
+#form input:focus{
+    outline: none;
+    border-bottom: 2px solid orange !important;
+    caret-color: orange;
+}
+#form .formf-line .orange, .opportunity-footer .row:nth-child(2) .orange{
+    width: 4%;
+    border: 1px solid orange;
+}
+#form .formf-line .line, .opportunity-footer .row:nth-child(2) .line{
+    border: 1px solid #bcbcbc83;
+    width: 64%;
+}
+#faqMilliSoftAbout .row:nth-child(1) .faqMilliSoftAbout-line .orange,#faqFooter .faqMilliSoftFooter-line .orange{
+    width: 1%;
+    border: 1px solid orange;
+}
+#faqMilliSoftAbout .row:nth-child(1) .faqMilliSoftAbout-line .line,#faqFooter .faqMilliSoftFooter-line .line{
+    border: 1px solid #bcbcbc83;
+    width: 70%;
+}
+#opportunityMap .position-absolute{
+    top: 100px;
+    right: 50px;
+    z-index: 100;
+    background-color: white;
+    padding: 50px 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #5e5e5e;
+}
+.opportunity-footer input:focus{
+    outline: none;
+}
+.opportunity-footer-btn{
+    padding: 10px 0;
+}
+#faqMilliSoftAbout #accordion .btn:active{
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+#faqMilliSoftAbout .en{
+    height: 0px !important;
+    overflow: hidden;
+    transition: 0.6s;
+}
+#faqMilliSoftAbout .enable{
+    height: 250px !important;
+    transition: 0.6s;
+}
+#faqFooter{
+    background-color: #06111A;
+}
+#faqFooter input{
+    caret-color: orange !important;
+    color: white !important;;
+}
+#faqFooter input:focus{
+    outline: none !important;;
+}
+#faqFooter .form-select:focus{
+    box-shadow: 0 0 0 !important;
+}
+ #leadership-images img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+/* Lidership Image carousel */
+#container {
+    /* height: 100vh; */
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    /* background: teal; */
+    display: grid ;
+    place-items: center
+  }
+  
+  #slider-container {
+    height: 300px;
+    width: 90vw;
+    max-width: 1400px;
+    /* background: #54d5e4; */
+    /* box-shadow: 5px 5px 8px gray inset; */
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  #slider-container .btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid black;
+    border-top: 8px solid black;
+  }
+  
+  #slider-container .btn:hover {
+    transform: scale(1.2);
+    color: black;
+  }
+  
+  #slider-container .btn.inactive {
+    border-color: rgb(153, 121, 126)
+  }
+  #slider-container #slider {
+    display: flex;
+    width: 1000%;
+    height: 100%; 
+    transition: all .5s;
+  }
+  
+  #slider-container #slider .slide {
+    height: 90%;
+    margin: auto 10px;
+    /* background-color: #a847a4; */
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    place-items: center;
+  }
+  
+  #slider-container #slider .slide span {
+    color: white;
+    font-size: 150px;
+  }
+  #slider-container .btn:first-child:active{
+    border-color: transparent;
+  }
+  #leadershipFooter{
+    background-color: #06111A;
+  }
+  #biographyImage{
+    position: absolute;
+    bottom: 250px;
+    right: calc(100%/5);
+  }
+  #biographyImage .biography-cycle {
+    width: 320px;
+    height: 320px;
+    background-color: orange;
+    border-radius: 50%;
+    position: relative;
+  }
+  #biographyImage .biography-cycle img{
+    width: 320px;
+    height: 360px;
+    border-bottom-right-radius: 46%;
+    border-bottom-left-radius: 46%;
+    position: absolute;
+    bottom: 1px;
+    filter: grayscale(100%);
+  }
+  #biographyImage .biography-paragraph{
+    position: absolute;
+  }
+  #biographyImage .biography-paragraph p{
+    display: inline;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    border: 2px solid orange;
+    position: absolute;
+    background-color: white;
+  }
+  #biographyImage .biography-paragraph .biography-paragraph-first{
+    right: -90px;
+    top: 100px;
+  }
+  #biographyImage .biography-paragraph .biography-paragraph-third{
+    right: -80px;
+    top: 230px;
+  }
+  #biographyImage .biography-paragraph .biography-paragraph-second{
+    top: 230px;
+  }
+@media only screen and (max-width: 1120px){
+    #faqMilliSoftAbout .enable{
+        height: 330px !important;
+    }
+    #leadershipFooter .leadershipFooter-group span{
+        right: 0px !important;
+    }
+    #biographyImage{
+        bottom: 190px;
+    }
+}
+@media only screen and (min-width: 1100px) {
+  
+    #slider-container #slider .slide {
+      width: calc(2.5% - 20px);
+    }
+    #leadershipFooter .leadershipFooter-googlePlay, #leadershipFooter .leadershipFooter-appStore,.pricing-googlePlay .w-70,.pricing-appStore .w-70{
+        width: 88% !important;
+       }
+} 
+@media only screen and (max-width: 1100px) {
+  
+    #slider-container #slider .slide {
+      width: calc(3.3333333% - 20px);
+    }
+    #leadershipFooter .leadershipFooter-googlePlay, #leadershipFooter .leadershipFooter-appStore,.pricing-googlePlay .w-70,.pricing-appStore .w-70{
+        width: 97% !important;
+       }
+}
+@media only screen and (max-width: 992px){
+    .footer .footer-next{
+        width: 75% !important;
+    }
+    #compare  #table{
+        width: 100% !important;
+        overflow-x: scroll !important;
+        flex-wrap: wrap !important;
+    }
+    #form button,#form label{
+        width: 100%!important;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .main-road{
+        margin-top: 100px !important;
+    }
+    #formFromInpput .row{
+        width: 100% !important;
+        margin: auto;
+    }
+    #opportunityMap .position-absolute{
+        width: 40% !important;
+    }
+    .opportunity-footer-input div input{
+        width: 50% !important;
+    }
+    .opportunity-footer-input div{
+        width: 87%!important;
+    }
+    .opportunity-footer-input div button{
+        margin-right: 3px!important ;
+        padding: 9px 22px !important;
+        width: 44% !important;
+    }
+    .opportunity-footer-market .op-market{
+        width: 40% !important;
+    }
+    .opportunity-footer-social ul{
+        width: auto !important;
+    }
+    #form .row:nth-child(1) .form-road ul li .nav-link{
+        margin-right: 0rem !important;
+        font-size: 15px !important;
+    }
+    #form .row:nth-child(1) .form-road .formf-line .line{
+        width: 80%;
+    }
+    .faq-footer-social ul{
+        width: auto !important;
+    }
+    #faqMilliSoftAbout .faqMilliSoftAbout-road ul{
+        width: 77% !important;
+    }
+    #faqMilliSoftAbout .row:nth-child(1) .faqMilliSoftAbout-line .line{
+        border: 1px solid #bcbcbc83;
+        width: 80%;  
+    }
+    #faqMilliSoftAbout .row:nth-child(2) .col-12 .row .size-40{
+        font-size: 30px !important;
+        width: 95% !important;
+    }
+    #faqMilliSoftAbout .row:nth-child(2) .col-12 .row .w-80{
+        width: 95% !important;
+    }
+    #faqMilliSoftAbout .enable{
+        height: 430px !important;
+    }
+    #faqFooter .faqFooter-phone .form-select{
+        width: auto !important;
+    }
+    #leadershipFooter .leadershipFooter-group span{
+        right: 0px !important;
+    }
+    #leadershipFooter .leadershipFooter-googlePlay .py-1 .white, #leadershipFooter .leadershipFooter-appStore .py-1 .white,.pricing-googlePlay .w-70 .py-1 .white,.pricing-appStore .w-70 .py-1 .white{
+       font-size: 15px;
+       }
+    #biographyImage{
+        bottom: 420px;
+        right: calc(100%/3);
+    }
+}
+@media only screen and (max-width: 900px) {
+  
+    #slider-container #slider .slide {
+      width: calc(5% - 20px);
+    }
+  
+  }
+@media only screen and (max-width: 768px){
+    #compare  #table table{
+        width: 50%;
+    }
+    .main-road{
+        margin-top: 100px !important;
+    }
+    #main .offcanvas{
+        background-color: #fff !important;
+    }
+    #people  .people-profile {
+        flex-wrap: wrap;
+        }
+    #people  .people-profile .col-12{
+            width: 100% !important;
+            margin-top: 20px;
+    }
+    #specialPlans .pricing-plans-road ul li a{
+        font-size: 15px !important;
+    }
+    #specialPlans .pricing-plans-road ul li a{
+        font-size: 15px !important;
+        margin-right: 0px !important;
+    }
+    #specialPlans .pricing-plans-road .justify-content-center .line{
+        width: 90% !important;
+    }
+    #opportunityMap .position-absolute {
+        width: 65% !important;
+    }
+    .opportunity-footer-input div{
+        width: 95% !important;
+    }
+    .opportunity-footer-input div input{
+        width: 50% !important;
+    }
+    .opportunity-footer-input div button{
+        margin-right: 3px!important ;
+        padding: 9px 22px !important;
+        width: 44% !important;
+    }
+    .opportunity-footer-market .op-market{
+        width: 40% !important;
+    }
+    .opportunity-footer-social ul{
+        width: auto !important;
+    }
+    #form .row:nth-child(1) .form-road ul li .nav-link{
+        margin-right: 0rem !important;
+        font-size: 15px !important;
+    }
+    #form .row:nth-child(1) .form-road .formf-line .line{
+        width: 80%;
+    }
+    .faq-footer-social ul{
+        width: auto !important;
+    }
+    #faqFooter .faq-footer-input .mt-4r .w-90{
+        margin: auto;
+    }
+    #faqMilliSoftAbout .row:nth-child(2) .col-12 .w-70,#faqMilliSoftAbout .row:nth-child(2) .col-12 .w-80{
+        width: 95% !important;
+        margin: auto;
+    } 
+    #faqMilliSoftAbout .faqMilliSoftAbout-road ul{
+        width: 90% !important;
+        margin: auto;
+        justify-content: center !important;
+    }
+    #faqMilliSoftAbout .faqMilliSoftAbout-road ul li .nav-link{
+        margin-right: 0.7rem !important;
+        font-size: 10px !important;
+    }
+    #faqMilliSoftAbout #accordion{
+        margin: auto;
+    }
+    .footer .footer-next{
+        width: 90% !important;
+    }
+    .footer .footer-next button{
+        width: 43% !important;
+    }
+    .footer .footer-next p{
+        width: 55% !important;
+        margin-right: 0px !important;
+        margin-left: 2px !important;
+    }
+    .footer .footer-next i{
+        margin-right: 0px !important; 
+    }
+    #leadershipFooter .leadershipFooter-paragraph{
+        font-size: 25px !important;
+    }
+    #leadershipFooter .leadershipFooter-group span{
+        right: 0px !important;
+    }
+    #leadershipFooter .leadershipFooter-googlePlay, #leadershipFooter .leadershipFooter-appStore,.pricing-googlePlay .w-70,.pricing-appStore .w-70{
+     width: 60% !important;
+    }
+    #biographyImage{
+        bottom: 250px;
+        right: calc(100%/4);
+    }
+}
+@media only screen and (max-width: 550px) {
+  
+    #slider-container #slider .slide {
+      width: calc(10% - 20px);
+    }
+    #leadershipFooter .leadershipFooter-googlePlay, #leadershipFooter .leadershipFooter-appStore,.pricing-googlePlay .w-70,.pricing-appStore .w-70{
+        width: 90% !important;
+    }
+    #biographyImage .biography-cycle{
+        width: 270px;
+        height: 270px;
+    }
+    #biographyImage .biography-cycle img{
+        width: 270px;
+        height: 310px;
+    }
+    #biographyImage .biography-paragraph p{
+        padding: 0.3rem 0.7rem;
+      }
+    #biographyImage{
+        bottom: 55px;
+    }
+  }
+@media only screen and (max-width: 425px){
+    .main-road{
+        margin-top: 100px !important;
+    }
+    #people  .people-profile {
+    flex-wrap: wrap;
+    }
+    #people  .people-profile .col-12{
+        width: 100% !important;
+        margin-top: 20px;
+    }
+    #specialPlans .pricing-plans-road ul li a{
+        font-size: 10px !important;
+        margin-right: 0px !important;
+    }
+    #specialPlans .pricing-plans-road .justify-content-center .line{
+        width: 90% !important;
+    }
+    .footer .footer-next{
+        width: 100% !important;
+    }
+    .footer .footer-next button{
+        width: 43% !important;
+    }
+    .footer .footer-next p{
+        width: 55% !important;
+        margin-right: 0px !important;
+        margin-left: 2px !important;
+    }
+    .footer .footer-next i{
+        margin-right: 0px !important; 
+    }
+    #form .form-phone-select{
+        width: 40% !important;
+    }
+    #form button,#form label{
+        width: auto!important;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #form .form-select{
+        width: auto !important;;
+    }
+    #form label{
+        margin-bottom: 0px !important;
+    }
+    .opportunity-footer-social ul{
+        width: auto !important;
+    }
+    .faq-footer-social ul{
+        width: auto !important;
+    }
+    .opportunity-footer-market .op-market{
+        width: 40% !important;
+    }
+    .opportunity-footer-input div{
+        width: 95% !important;
+    }
+    .opportunity-footer-input div input{
+        width: 50% !important;
+    }
+    .opportunity-footer-input div button{
+        margin-right: 3px!important ;
+        padding: 9px 22px !important;
+        width: 44% !important;
+    }
+    #form .form-road ul{
+        width: 95%;
+    }
+    #form .row:nth-child(1) .form-road ul li .nav-link{
+        margin-right: 0rem !important;
+        font-size: 9px !important;
+    }
+    #form .row:nth-child(1) .form-road .formf-line .line{
+        width: 80%;
+    }
+    .opportunity-footer .opportunity-footer-social ul{
+        overflow: scroll !important;;
+    }
+    #faqMilliSoftAbout .faqMilliSoftAbout-road ul{
+        width: 85% !important;;
+    }
+    #faqMilliSoftAbout .row:nth-child(2) .col-12 .row .size-40{
+        font-size: 30px !important;
+    }
+    #faqMilliSoftAbout .row:nth-child(2) .col-12 .row{
+        width: 100% !important;
+    }
+    #faqMilliSoftAbout .row:nth-child(2) .col-12 .row p{
+        width: 90% !important;
+    }
+    #faqMilliSoftAbout #accordion{
+        width: 90% !important;
+        margin: auto;
+    }
+    #faqMilliSoftAbout #accordion button{
+        font-size: 15px !important;
+    }
+    #faqFooter .row{
+        width:90% !important;
+        margin: auto;
+    }
+    #faqFooter .row .size-40{
+        width: 90% !important;
+        font-size: 30px !important;
+    }
+    #faqFooter .row .w-70{
+        width: 90% !important;
+    }
+    #faqFooter .faqFooter-phone .form-select{
+        width: auto !important;
+    }
+    #faqFooter .w-85{
+        width: 95% !important;
+        margin: auto;
+    }
+    #faqFooter .bg-f{
+        width: 100% !important;
+    }
+    #faqMilliSoftAbout .faqMilliSoftAbout-road ul li .nav-link{
+        margin-right: 0rem !important;
+        font-size: 9px !important;
+    }
+    #faqFooter .faq-footer-social ul{
+        overflow-x: scroll !important;;
+    }
+    #faqFooter .faq-map{
+        width: 100% !important;
+    }
+    #leadershipFooter .leadershipFooter-social ul{
+        width: 100%;
+        overflow-x: scroll !important;
+    }
+    #leadershipFooter .leadershipFooter-group span{
+        right: 0px !important;
+    }
+    #leadershipFooter .leadershipFooter-googlePlay, #leadershipFooter .leadershipFooter-appStore,.pricing-googlePlay,.pricing-appStore{
+        width: 95% !important;
+    }
+    #biographyImage .biography-cycle{
+        width: 250px;
+        height: 250px;
+    }
+    #biographyImage .biography-cycle img{
+        width: 250px;
+        height: 290px;
+    }
+    #biographyImage .biography-paragraph p{
+        padding: 0.3rem 0.6rem;
+      }
+    #biographyImage{
+        right: calc(100%/4);
+    }
+}
+@media only screen and (max-width:376px) {
+    #biographyImage{
+        bottom: 0px;
+    }
+}

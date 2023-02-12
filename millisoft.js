@@ -7,6 +7,7 @@ function lock(){
   else if(de.msRequestFullscreen){de.msRequestFullscreen()}
   screen.orientation.lock();
 }
+lock();
 $(window).ready(function() {
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
